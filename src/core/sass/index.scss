@@ -1,5 +1,13 @@
+// IMPORTS FROM CORE
 @import './App.scss';
+@import './variables.scss';
+@import './mixins.scss';
 
+// IMPORTS FROM FEATURES
+
+@import '../../features/auth/sass/index.scss';
+
+// ADDITIONAL STYLES
 :root {
   font-family: Roboto, sans-serif;
   line-height: 1.5;
