@@ -1,5 +1,7 @@
+import { PrivateLayout } from "@/core/layouts";
+
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  return <PrivateLayout>Dashboard</PrivateLayout>;
 };
 
 export default Dashboard;

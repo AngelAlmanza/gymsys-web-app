@@ -10,6 +10,13 @@ import { PrivateRoutes, PublicRoutes } from "./core/enums";
 
 const Login = lazy(() => import("@/features/auth/pages/Login"));
 const Dashboard = lazy(() => import("@/features/dashboard/pages/Dashboard"));
+const Members = lazy(() => import("@/features/members/pages/Members"));
+const Plans = lazy(() => import("@/features/plans/pages/Plans"));
+const Subscriptions = lazy(
+  () => import("@/features/subscriptions/pages/Subscriptions"),
+);
+const Products = lazy(() => import("@/features/products/pages/Products"));
+const Sales = lazy(() => import("@/features/sales/pages/Sales"));
 
 function App() {
   return (
@@ -30,6 +37,26 @@ function App() {
                 <Route
                   path={PrivateRoutes.DASHBOARD}
                   element={<Dashboard />}
+                />
+                <Route
+                  path={PrivateRoutes.MEMBERS}
+                  element={<Members />}
+                />
+                <Route
+                  path={PrivateRoutes.PLANS}
+                  element={<Plans />}
+                />
+                <Route
+                  path={PrivateRoutes.SUBSCRIPTIONS}
+                  element={<Subscriptions />}
+                />
+                <Route
+                  path={PrivateRoutes.PRODUCTS}
+                  element={<Products />}
+                />
+                <Route
+                  path={PrivateRoutes.SALES}
+                  element={<Sales />}
                 />
               </Route>
             </RoutesWithNotFound>
